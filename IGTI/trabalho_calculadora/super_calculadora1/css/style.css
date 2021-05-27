@@ -1,0 +1,21 @@
+
+
+body{
+    padding: 10px;
+    font-family: 'lato';
+}
+
+input{
+  margin: 1px; /* faz uma margem para evitar que os inputs fiquem colados*/
+}
+
+/* aplica as cores dos alertas do span */
+.erro{
+  color:red;
+  padding-left: 10px;
+}
+
+.sucesso{
+  color:green;
+  padding-left: 10px;
+}

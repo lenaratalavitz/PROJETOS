@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  	<meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/w3.css">    <!-- este é um css copiado direto da internet para deixar um pouquinho bonito -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">    <!-- este é um css personalizado para ajuste fino -->
+
+
+<title>Super calculadora - Lenara Talavitz</title>
+
+</head>
+<body>
+
+<h1>Super calculadora</h1>
+
+<label for="inputA" >Numero (A):</label>      <!-- label é a "etiqueta" dizendo o que é para preencher -->
+<input  id="inputA" type="text"   /><span id="alertA"></span><br>                   <!-- input é o campo de texto, comumente usando em formularios-->
+
+<label for="inputB" >Numero (B):</label>
+<input  id="inputB" type="text"  /><span id="alertB"></span><br>
+
+
+<hr>
+
+<label for="soma" >a. O valor de A + B:</label>
+<input readonly id="soma" type="text"  /><br>            <!-- aqui foi usado o parametro "readonly" para que esse input não tenha o conteudo alterado pelo usuário-->
+                                                         <!-- também foi definido um id únio para cada input, para que o JS possa manipular seu "value" depois-->
+
+<label for="subtracaoAB" >b. O valor de A – B:</label>
+<input readonly id="subtracaoAB" type="text"  /><br>
+
+<label for="subtracaoBA" >c. O valor de B – A:</label>
+<input readonly id="subtracaoBA" type="text"  /><br>
+
+<label for="multiplicacao" >d. O valor de A x B:</label>
+<input readonly id="multiplicacao" type="text"  /><br>
+
+<label for="divisaoAB" >e. O valor de A / B, indicando o valor "Divisão por 0" caso não seja possível
+dividir (B === 0):</label>
+<input readonly id="divisaoAB" type="text"  /><br>
+
+<label for="divisaoBA" >f. O valor de B / A, indicando o valor "Divisão por 0" caso não seja possível
+dividir (A === 0):</label>
+<input readonly id="divisaoBA" type="text"  /><br>
+
+<label for="quadradoA" >g. O valor de A²:</label>
+<input readonly id="quadradoA" type="text"  /><br>
+
+<label for="quadradoB" >h. O valor de B²:</label>
+<input readonly id="quadradoB" type="text"  /><br>
+
+<label for="divisoresA" >i. Os divisores inteiros de A em forma de lista, separada por vírgulas e indicação
+da quantidade total entre parênteses:</label>
+<input readonly id="divisoresA" type="text"  /><br>
+
+
+<label for="divisoresB" >j. Os divisores inteiros de B em forma de lista, separada por vírgulas e indicação
+da quantidade total entre parênteses:</label>
+<input readonly id="divisoresB" type="text"  /><br>
+
+
+<label for="fatorialA" >k. O valor do fatorial de A, que deve ser calculado com A <= 21, somente. Indicar
+"Número muito grande" caso A > 21:</label>
+<input readonly id="fatorialA" type="text"  /><br>
+
+
+<label for="fatorialB" >l. O valor do fatorial de B, que deve ser calculado com B <= 21, somente. Indicar
+"Número muito grande" caso B > 21:</label>
+<input readonly id="fatorialB" type="text"  /><br>
+
+
+
+<!-- anotacoes exemplo: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_responsive_quarter&stacked=h -->
+
+<!-- aqui no final é carregado o arquivo do js, somente depois de toda a pagina html ter sido carregada no navegador-->
+
+<script src="js/calculadora.js"></script>
+
+<p>Feito por: Lenara Talavitz</p>
+</body>
+</html>

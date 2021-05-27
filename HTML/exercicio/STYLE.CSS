@@ -1,0 +1,33 @@
+/*meu primeiro arquivo css*/
+
+p{
+	color: red;
+	background-color:black;
+	font-size: 90px;
+	font-family: Arial;
+}
+body{background-color:#000000;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+header{
+	background-color:green;
+	height: 100px;
+}
+div{
+	background-color: red;
+}
+#div_esquerda{
+	background-color:red;
+}
+
+#div_direita{
+	background-color:yellow;
+}
+footer{
+	background-color:blue;
+	height:30px;
+}
