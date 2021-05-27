@@ -1,0 +1,2 @@
+
+git add . ; git add * ; git commit -m "atualização $(date) " ; git push -f origin master
